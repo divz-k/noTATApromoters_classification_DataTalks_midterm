@@ -18,7 +18,7 @@ The workflow implements a full machine-learning pipeline:
 - hyperparameter tuning
 - evaluation and interpretation
 
-### Key Steps:
+## Key Steps:
 
 - Feature Extraction:
 -- Counts of 5-mers (sequence + reverse complement) → 512 features
@@ -31,5 +31,10 @@ The workflow implements a full machine-learning pipeline:
 -- XGBoost
 - Model Persistence: Trained models saved with joblib.
 - Deployment: FastAPI application, containerized using Docker, deployed on Render.
+
+## Installation
+1) Clone Repository
+ git clone [<tataless_promClassification>](https://github.com/divz-k/noTATApromoters_classification_DataTalks_midterm)]
+ cd tataless_promClassification
 
 
