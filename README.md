@@ -34,7 +34,35 @@ The workflow implements a full machine-learning pipeline:
 
 ## Installation
 1) Clone Repository
- git clone [<tataless_promClassification>](https://github.com/divz-k/noTATApromoters_classification_DataTalks_midterm)]
- cd tataless_promClassification
+```
+ git clone [<tataless_promClassification>](https://github.com/divz-k/noTATApromoters_classification_DataTalks_midterm)
 
+ cd tataless_promClassification
+```
+
+2) Create and activate Environment
+```
+python -m venv promoter_env
+# Linux/Mac
+source venv/bin/activate
+# Windows
+venv\Scripts\activate
+#install dependencies
+pip install -r requirements.txt
+```
+
+## Running locally by taking from Docker
+```
+#build docker image
+docker build -t promoter-classifier .
+# run docker containerised
+docker run -p 8000:8000 promoter-classifier
+#The API will be accessible at http://localhost:8000
+#Test Locally
+curl -X POST "http://localhost:8000/predict_regression" \
+     -H "Content-Type: application/json" \
+     -d '{"AAAAA":1.0,"AAAAT":0.0, ... }'
+```
+
+## Running the deployed API
 
