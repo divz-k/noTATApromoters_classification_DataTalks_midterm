@@ -66,6 +66,7 @@ curl -X POST "http://localhost:8000/predict_regression" \
 ## Running the deployed API
 1) Use the script convertDNASeqToX.ipynb to make the X_json as described before
 2) Then go to script sendReq.ipynb. Paste the required X_json and run the blocks. You should see the output prediction (eg: {'prediction': 1}).
+3) There is a video Screen Recording describing this process: ScreenRecording_testingDeployment.mov. Github doesn't allow you to play it, so you have to download and watch the video.
 
 ## Files in Repository
 - code.ipynb – Feature extraction, model training, and evaluation
@@ -79,3 +80,7 @@ curl -X POST "http://localhost:8000/predict_regression" \
 - app.py – FastAPI application
 - convertDNASeqToX.ipynb - make the X feature matrix for any DNA sequence
 - sendReq.ipynb - takes the X feature matrix (from the json format) and sends request to the deployed API, and returns the prediction.
+
+## Notes:
+- The data analysis, EDA, model evaluations, performance metrics and the basis for the final model choice are all documented in the markdowns on the code.ipynb script. 
+- How to use this model has been described in the README
