@@ -51,7 +51,7 @@ pip install -r requirements.txt
 
 ## Running locally by taking from Docker
 1) Use the script convertDNASeqToX.ipynb to make the X_json from the input DNA sequence. Just paste the required DNA sequence (containing only A/T/G/C) into the script, and run all the code blocks.
-2) At the end, you will see the X_json printed: this is the input X features in a json format that can be pasted as the input. It will look like this: {"AAAAA":1.0,"AAAAT":0.0, ... } (513 features). (The first part on making the X_json is demonstrated in ScreenRecording_testingDeployment.mov
+2) At the end, you will see the X_json printed: this is the input X features in a json format that can be pasted as the input. It will look like this: {"AAAAA":1.0,"AAAAT":0.0, ... } (513 features). The first part on making the X_json is demonstrated in ScreenRecording_testingDeployment.mov
 3) Copy this and use in the following code.
 ```
 #build docker image
